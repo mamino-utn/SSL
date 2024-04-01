@@ -2,7 +2,7 @@
 
 ### Sintaxis y Semántica de los Lenguajes
 - Curso: K2052
-- Año Cursada: 2024
+- Año de Cursada: 2024
 
 - Apellido: Miño 
 - Nombre: Matias Ezequiel
