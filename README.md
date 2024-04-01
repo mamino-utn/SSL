@@ -4,6 +4,6 @@
 - Curso: K2052
 - Año Cursada: 2024
 
-Apellido: Miño 
-Nombre: Matias Ezequiel
-Legajo: 175.966-8
+- Apellido: Miño 
+- Nombre: Matias Ezequiel
+- Legajo: 175.966-8
