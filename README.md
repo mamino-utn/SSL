@@ -1,4 +1,5 @@
-# Sintaxis y Semántica de los Lenguajes
+# SSL
+## Sintaxis y Semántica de los Lenguajes
 
 Curso: K2052
 Año Cursada: 2024
