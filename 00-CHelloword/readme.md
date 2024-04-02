@@ -1,4 +1,5 @@
-#### Compilador usado MinGW-w64 via MSYS2 version: 13.1.0
+#### Compilador usado MinGW-w64 via MSYS2 
+#### version: 13.1.0
 
 #### Soporta compilar en :
 - c11
