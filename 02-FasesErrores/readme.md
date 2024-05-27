@@ -32,21 +32,21 @@ hello2.i contiene nuestro codigo fuente sin comentarios y todas las definicion t
  Agrego i en el printf para que %d tenga un valor asosiado para mostrar.
 
  ### 5: Remoción de Prototipo
- a.--
  b.
-    i. El codigo no arroja ningun error, pero si da warnings respecto a printf y la inclusion de la libreria stdio.h
+ 
+i. El codigo no arroja ningun error, pero si da warnings respecto a printf y la inclusion de la libreria stdio.h
 
-    ii. Un prototipo es la declaración de una función en C que especifica el nombre de la función, su tipo de retorno y los tipos de sus parámetros, sin necesidad de realizar el cuerpo de la funcion. Se pueden generar en el mismo archivo c al comienzo y luego realizar el cuerpo de la funcion. O realizar un archivo .h que contenga los propotipos de las funciones que vayamos a utilizar y un archivo .c que contenga el cuerpo de nuestras funciones luego realizar el contrato entre ambas partes. 
+ii. Un prototipo es la declaración de una función en C que especifica el nombre de la función, su tipo de retorno y los tipos de sus   parámetros, sin necesidad de realizar el cuerpo de la funcion. Se pueden generar en el mismo archivo c al comienzo y luego realizar el cuerpo de la funcion. O realizar un archivo .h que contenga los propotipos de las funciones que vayamos a utilizar y un archivo .c que contenga el cuerpo de nuestras funciones luego realizar el contrato entre ambas partes. 
 
-    iii. Un declaracion implicita es cuando se hace llamada a una funcion sin tener declarado previamente un prototipo de dicha funcion en el codigo. En C provoca que el compilador asuma ciertos tipos por defecto para la funcion.
+iii. Un declaracion implicita es cuando se hace llamada a una funcion sin tener declarado previamente un prototipo de dicha funcion en el codigo. En C provoca que el compilador asuma ciertos tipos por defecto para la funcion.
 
-    iv. La especificacion de main indica que devuelve un entero y no recibe parametros.
+iv. La especificacion de main indica que devuelve un entero y no recibe parametros.
 
-    v.En general las implementaciones tratan de seguir el estándar de C establecido por el ISO, siempre y cuando no tenga extensiones del compilador y configuraciones especificas.
+v.En general las implementaciones tratan de seguir el estándar de C establecido por el ISO, siempre y cuando no tenga extensiones del compilador y configuraciones especificas.
 
-    vi. Una función "built-in" es una función que está directamente integrada en el compilador o en el entorno de ejecución del lenguaje de programación. Estas funciones son parte del propio lenguaje y no necesitan ser definidas o importadas desde bibliotecas externas.
+vi. Una función "built-in" es una función que está directamente integrada en el compilador o en el entorno de ejecución del lenguaje de programación. Estas funciones son parte del propio lenguaje y no necesitan ser definidas o importadas desde bibliotecas externas.
 
-    vii. Podemos concluir que gcc compila el codigo ya que posee un configuracion o extension que le permite tener definida implicitamente la funcion printf. No va en contra de las especificaciones porque el mismo compilador asume los parametros de printf . Pero es más recomendable para hacer a nuestro codigo más portable,legible y menos propenso a errores.
+vii. Podemos concluir que gcc compila el codigo ya que posee un configuracion o extension que le permite tener definida implicitamente la funcion printf. No va en contra de las especificaciones porque el mismo compilador asume los parametros de printf . Pero es más recomendable para hacer a nuestro codigo más portable,legible y menos propenso a errores.
 
 ### 6: Compilación Separada: Contratos y Módulos
 b . Utilizando el comando gcc hello8.c studio1.c -o nombreArchivo logre generar un ejecutable conectado ambos archivos.
