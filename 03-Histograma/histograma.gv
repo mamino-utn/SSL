@@ -1,0 +1,12 @@
+digraph Histograma {
+    
+    In  [label="In",shape=circle,fontsize ="10"];
+    Out [label="Out",shape=circle,fontsize ="10"];
+    
+    In->In [label=" Caracter | ++nc" fontsize="7" arrowsize="0.6"];
+    In->In [label=" \\n | ++nl",tailport=w,fontsize="7"];
+
+    
+    In->Out [label=" otro | state=OUT ",fontsize="7",arrowsize="0.6",headport=w];
+    Out->In [label=" OUT | ++nw ,nc=0,state=IN",fontsize="7",arrowsize="0.6",headport=se,tailport=ne]
+}
