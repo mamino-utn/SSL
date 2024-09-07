@@ -1,0 +1,43 @@
+digraph remover_comentarios {
+    rankdir=LR;
+    size="8,5"
+    
+    node [shape = doublecircle]; INICIO;
+    node [shape = circle];
+
+    INICIO -> CODIGO [label = "c | c"];
+    CODIGO -> BARRA [label = "/ | /"];
+    CODIGO -> CODIGO [label = "c | c"];
+    CODIGO -> COMILLA_DOBLE [label = "\" | \""];
+    CODIGO -> COMILLA_SIMPLE [label = "' | '"];
+
+    COMILLA_DOBLE -> FIN_COMILLA_DOBLE [label = "\" | \""];
+    COMILLA_DOBLE -> COMILLA_DOBLE [label = "c | c"];
+    COMILLA_DOBLE -> ESC_COMILLA_DOBLE [label = "\\ | \\"];
+
+    ESC_COMILLA_DOBLE -> COMILLA_DOBLE [label = "c | c"];
+
+    FIN_COMILLA_DOBLE -> CODIGO [label = "c | c"];
+
+    COMILLA_SIMPLE -> FIN_COMILLA_SIMPLE [label = "' | '"];
+    COMILLA_SIMPLE -> COMILLA_SIMPLE [label = "c | c"];
+    COMILLA_SIMPLE -> ESC_COMILLA_SIMPLE [label = "\\ | \\"];
+
+    ESC_COMILLA_SIMPLE -> COMILLA_SIMPLE [label = "c | c"];
+
+    FIN_COMILLA_SIMPLE -> CODIGO [label = "c | c"];
+
+    BARRA -> CODIGO [label = "c | c"];
+    BARRA -> COMENTARIO_LINEA [label = "/ | ε"];
+    BARRA -> COMENTARIO_BLOQUE [label = "* | ε"];
+
+    COMENTARIO_LINEA -> COMENTARIO_LINEA [label = "c | ε"];
+    COMENTARIO_LINEA -> CODIGO [label = "\\n | ε"];
+
+    COMENTARIO_BLOQUE -> COMENTARIO_BLOQUE [label = "c | ε"];
+    COMENTARIO_BLOQUE -> FIN_COMENTARIO_BLOQUE [label = "* | ε"];
+    
+    FIN_COMENTARIO_BLOQUE -> COMENTARIO_BLOQUE [label = "c | ε"];
+    FIN_COMENTARIO_BLOQUE -> CODIGO [label = "/ | ε"];
+    FIN_COMENTARIO_BLOQUE -> FIN_COMENTARIO_BLOQUE [label = "* | ε"];
+}

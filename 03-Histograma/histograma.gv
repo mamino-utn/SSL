@@ -1,12 +1,14 @@
 digraph Histograma {
     
-    In  [label="In",shape=circle,fontsize ="10"];
-    Out [label="Out",shape=circle,fontsize ="10"];
+    In  [label="In", shape=circle, fontsize="10"];
+    Out [label="Out -", shape=circle, fontsize="10"];
+    End [label="End", shape=circle, fontsize="10"];
     
-    In->In [label=" Caracter | ++nc" fontsize="7" arrowsize="0.6"];
-    In->In [label=" \\n | ++nl",tailport=w,fontsize="7"];
-
-    
-    In->Out [label=" otro | state=OUT ",fontsize="7",arrowsize="0.6",headport=w];
-    Out->In [label=" OUT | ++nw ,nc=0,state=IN",fontsize="7",arrowsize="0.6",headport=se,tailport=ne]
+    Out->End [label="EOF / ε", fontsize="7", arrowsize="0.3"];
+    Out->Out [label="cb / ε " , fontsize="7", arrowsize="0.3"];
+    Out->In [label= "otro / lp ++", fontsize="7", arrowsize="0.3"];
+    In->In [label= "otro / lp ++", fontsize="7", arrowsize="0.3"];
+    In->Out [label= "cb / lp = 0, array(lp)++", fontsize="7", arrowsize="0.3"];
+    In->End [label = "EOF / array(lp)++ ", fontsize="7", arrowsize="0.3"];
+  
 }
