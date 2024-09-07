@@ -1,6 +1,6 @@
 ## 1 - Arboles de expresion
  b.<br>
-<img src="https://i.postimg.cc/LsK54nfD/arbol-drawio.png"/>
+<img src="https://imgur.com/a/62RDNuF"/>
 
  c.<br>
  <img src="https://imgur.com/1asLuSI.png"/>
