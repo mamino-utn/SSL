@@ -1,0 +1,34 @@
+digraph Dependencias {
+    // Configuración para que el gráfico sea vertical (de arriba hacia abajo)
+    rankdir=TB;
+    
+    // Dependencias de main.c
+    "main.c" -> "Parser.h";
+    "main.c" -> "ManejadorDeErrores.h";
+    
+    // Dependencias de ManejadorDeErrores.c
+    "ManejadorDeErrores.c" -> "ManejadorDeErrores.h";
+    
+    // Dependencias de Parser.c
+    "Parser.c" -> "Parser.h";
+    "Parser.c" -> "Scanner.h";
+    "Parser.c" -> "VerificadorSemantico.h";
+    "Parser.c" -> "GeneradorDeCodigo.h";
+    
+    // Dependencias de Scanner.c
+    "Scanner.c" -> "Scanner.h";
+    
+    // Dependencias de VerificadorSemantico.c
+    "VerificadorSemantico.c" -> "VerificadorSemantico.h";
+    
+    // Dependencias de GeneradorDeCodigo.c
+    "GeneradorDeCodigo.c" -> "GeneradorDeCodigo.h";
+    
+    // Relacion de archivos .c con sus .h
+    "Parser.h" -> "Parser.c";
+    "ManejadorDeErrores.h" -> "ManejadorDeErrores.c";
+    "Scanner.h" -> "Scanner.c";
+    "VerificadorSemantico.h" -> "VerificadorSemantico.c";
+    "GeneradorDeCodigo.h" -> "GeneradorDeCodigo.c";
+}
+

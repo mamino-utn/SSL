@@ -1,0 +1,20 @@
+circ 30 20 15 fill=red border=red;
+circ 55 20 15 fill=red border=red;
+circ 32 22 10 fill=blue border=blue;
+circ 57 22 10 fill=blue border=blue;
+tri  45 30 20 10 fill=red border=red;
+rec  20 60 60 10 fill=red border=red;
+rec  20 60 2  10 fill=blue border=blue;
+rec  25 60 2  10 fill=blue border=blue;
+rec  30 60 2  10 fill=blue border=blue;
+rec  35 60 2  10 fill=blue border=blue;
+rec  40 60 2  10 fill=blue border=blue;
+rec  45 60 2  10 fill=blue border=blue;
+rec  50 60 2  10 fill=blue border=blue;
+rec  55 60 2  10 fill=blue border=blue;
+rec  60 60 2  10 fill=blue border=blue;
+rec  65 60 2  10 fill=blue border=blue;
+rec  70 60 2  10 fill=blue border=blue;
+rec  75 60 2  10 fill=blue border=blue;
+rec  80 60 2  10 fill=blue border=blue;
+
