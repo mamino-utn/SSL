@@ -1,4 +1,4 @@
-clean_files = main.o manejadorDeErrores.o parser.o scanner.o verificadorSemantico.o generadorDeCodigo.o SVGLite
+clean_files = main.o manejadorDeErrores.o parser.o scanner.o verificadorSemantico.o generadorDeCodigo.o 
 
 1: SVGLite clean
 
@@ -22,8 +22,8 @@ generadorDeCodigo.o: generadorDeCodigo.c generadorDeCodigo.h
 
 SVGLite: main.o manejadorDeErrores.o parser.o scanner.o verificadorSemantico.o generadorDeCodigo.o
 	@gcc $^ -o SVGLite
-	@./SVGLite
-	@rm -f SVGLite
+	@#./SVGLite
+	@#rm -f SVGLite
 
 
 .PHONY: clean

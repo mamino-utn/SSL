@@ -173,7 +173,7 @@ El atributo text permite agregar texto asociado a una figura. El texto se coloca
     - fill= green
     - border= blue
 Ejemplo: Si definimos un cuadrado sin atributos `cuad X Y L` se graficara el cuadrado por defecto  
-<img src="https://imgur.com/Qh1Qmi8.png"/>
+<img src="./Recursos/dibujoEjemplo.png"/>
 
  - El tamaño del "lienzo" tendra como valor predefindo los siguientes parametros (definidos en pixeles):
     - ancho=100 
@@ -203,4 +203,4 @@ rec 70 20 25 15 border = red;
 ```  
 #### Resultados Esperados
 
-<img src="https://imgur.com/7K58WMG.png" width="400"/><img src="https://imgur.com/ZVEyjNI.png" width="400"/>
+<img src="./Recursos/salidaEsperada.png" width="400"/><img src="./Recursos/dibujoEsperado.png" width="400"/>

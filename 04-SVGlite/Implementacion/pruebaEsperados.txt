@@ -1,0 +1,4 @@
+cuad 10 10 20 fill = red border = yellow text = 'Cuadrado rojo';
+circ 30 30 15 fill = blue;
+tri 50 50 20 30 text = 'Triángulo';
+rec 70 20 25 15 border = red;
