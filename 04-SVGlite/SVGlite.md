@@ -207,4 +207,4 @@ rec 70 20 25 15 border = red;
 
 #### Resultados Esperados
 
-<img src="./Recursos/salidaEsperada.png" width="400"/><img src="./Recursos/dibujoEsperado.png" width="400"/>
+<img src="./Recursos/salidaEsperada.png" width="400"/><img src="./Recursos/dibujoEsperado.svg" width="400"/>
